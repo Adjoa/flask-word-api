@@ -1,3 +1,5 @@
+# app/__init__.py
+
 from flask_api import FlaskAPI
 
 # local import
@@ -12,6 +14,9 @@ def create_app(config_name):
     @app.route('/words', methods=['GET'])
     def words():
         if request.method == "GET":
+            response = jsonify({
+                'wysiwyg': 'Hello, world!'
+            })
             response.status_code = 200
             return response
 
