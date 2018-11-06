@@ -3,7 +3,7 @@ import os
 import json
 from app import create_app
 
-class WordsAPITestCase(unittest.TestCase):
+class TestApp(unittest.TestCase):
 
     def setUp(self):
         """Define test variables and initialize app."""
